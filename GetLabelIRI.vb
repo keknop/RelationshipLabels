@@ -45,12 +45,7 @@ On Error GoTo 0
    Call BuildRelationshipIndex( Relationships(), nFileError )
    If nFileError = TRUE Then Exit Sub
 
-  
-  
- 
-   
 
-CheckSubfields:
    Dim nRow As Integer
    Dim nAllSFCount As Integer
    Dim nRelSFCount As Integer
