@@ -297,7 +297,7 @@ Function FindRelationship( FieldType%, ByRef Search$, ByRef Index() As String ) 
          specialcase% = 0
    End Select
    domain$ = SelectDomain(Search$, specialcase%)
-   MsgBox("Debug: specialcase for search term " & Search$ & " is " & specialcase% & " giving domain result " & domain$)
+   'MsgBox("Debug: specialcase for search term " & Search$ & " is " & specialcase% & " giving domain result " & domain$)
 
    For i = LBound(Index()) To UBound(Index())
       check$ = GetField(Index(i), 1, "|")
@@ -308,12 +308,12 @@ Function FindRelationship( FieldType%, ByRef Search$, ByRef Index() As String ) 
 '#    If the label matches multiple WEMI domains, query the user and also match the domain from the IRI
 
       If InStr(Search$, check$) AND Len(Search$) = Len(check$) Then
-         MsgBox("Debug: potential match found. domcheck is " & domcheck$)
+         'MsgBox("Debug: potential match found. domcheck is " & domcheck$)
          If specialcase% = 0 Then
             entry$ = GetField(Index(i), ft%, "|")
           Else
             If domain$ = domcheck$ Then 
-               MsgBox("Debug: domain is " & domain$ & ", domcheck is " & domcheck$)
+               'MsgBox("Debug: domain is " & domain$ & ", domcheck is " & domcheck$)
                entry$ = GetField(Index(i), ft%, "|")
             End If
          End If
@@ -358,7 +358,7 @@ Function FindRelationship( FieldType%, ByRef Search$, ByRef Index() As String ) 
    entry$=""
      
 Done:
-MsgBox("Debug: Findrelationship is " & entry$)
+'MsgBox("Debug: Findrelationship is " & entry$)
 End Function
 
 Function IsolateLabel ( CheckText$, ByRef RightText$ )
