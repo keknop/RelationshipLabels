@@ -1,0 +1,202 @@
+academic supervisor|w|http://rdaregistry.info/Elements/w/P10407|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+addressee|w|http://rdaregistry.info/Elements/w/P10413|http://rdaregistry.info/Elements/w/P10507|http://rdaregistry.info/Elements/w/P10554
+aggregator|w|http://rdaregistry.info/Elements/w/P10448|http://rdaregistry.info/Elements/w/P10542|http://rdaregistry.info/Elements/w/P10589
+appellant|w|http://rdaregistry.info/Elements/w/P10042|http://rdaregistry.info/Elements/w/P10009|ERR: This label is only valid for persons and corporate bodies.
+appellee|w|http://rdaregistry.info/Elements/w/P10035|http://rdaregistry.info/Elements/w/P10005|ERR: This label is only valid for persons and corporate bodies.
+architect|w|http://rdaregistry.info/Elements/w/P10438|http://rdaregistry.info/Elements/w/P10532|http://rdaregistry.info/Elements/w/P10579
+artist|w|http://rdaregistry.info/Elements/w/P10451|http://rdaregistry.info/Elements/w/P10545|http://rdaregistry.info/Elements/w/P10592
+audio producer|w|http://rdaregistry.info/Elements/w/P10421|http://rdaregistry.info/Elements/w/P10515|http://rdaregistry.info/Elements/w/P10562
+author|w|http://rdaregistry.info/Elements/w/P10436|http://rdaregistry.info/Elements/w/P10530|http://rdaregistry.info/Elements/w/P10577
+book artist|w|http://rdaregistry.info/Elements/w/P10428|http://rdaregistry.info/Elements/w/P10522|http://rdaregistry.info/Elements/w/P10569
+calligrapher|w|http://rdaregistry.info/Elements/w/P10426|http://rdaregistry.info/Elements/w/P10520|http://rdaregistry.info/Elements/w/P10567
+cartographer|w|http://rdaregistry.info/Elements/w/P10435|http://rdaregistry.info/Elements/w/P10529|http://rdaregistry.info/Elements/w/P10576
+casting director|w|http://rdaregistry.info/Elements/w/P10453|http://rdaregistry.info/Elements/w/P10547|http://rdaregistry.info/Elements/w/P10594
+choreographer|w|http://rdaregistry.info/Elements/w/P10434|http://rdaregistry.info/Elements/w/P10528|http://rdaregistry.info/Elements/w/P10575
+civil defendant|w|http://rdaregistry.info/Elements/w/P10397|http://rdaregistry.info/Elements/w/P10395|ERR: This label is only valid for persons and corporate bodies.
+commissioner|w|http://rdaregistry.info/Elements/w/P10439|ERR: This label is only valid for persons and families. Use "commissioning body" for corporate bodies.|http://rdaregistry.info/Elements/w/P10580
+commisioning body|w|USE: commissioner|http://rdaregistry.info/Elements/w/P10533|USE: commissioner
+compiler|w|http://rdaregistry.info/Elements/w/P10444|http://rdaregistry.info/Elements/w/P10538|http://rdaregistry.info/Elements/w/P10585
+composer|w|http://rdaregistry.info/Elements/w/P10442|http://rdaregistry.info/Elements/w/P10536|http://rdaregistry.info/Elements/w/P10583
+consultant|w|http://rdaregistry.info/Elements/w/P10458|http://rdaregistry.info/Elements/w/P10552|http://rdaregistry.info/Elements/w/P10599
+court governed|w|ERR: This relationship is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10011|ERR: This relationship is only valid for corporate bodies.
+creator|w|http://rdaregistry.info/Elements/w/P10437|http://rdaregistry.info/Elements/w/P10531|http://rdaregistry.info/Elements/w/P10578
+criminal defendant|w|http://rdaregistry.info/Elements/w/P10396|http://rdaregistry.info/Elements/w/P10394|ERR: This label is only valid for persons and corporate bodies.
+dedicatee|w|http://rdaregistry.info/Elements/w/P10412|http://rdaregistry.info/Elements/w/P10506|http://rdaregistry.info/Elements/w/P10553
+dedicator|w|http://rdaregistry.info/Elements/w/P10414|http://rdaregistry.info/Elements/w/P10508|http://rdaregistry.info/Elements/w/P10555
+defendant|w|http://rdaregistry.info/Elements/w/P10286|http://rdaregistry.info/Elements/w/P10285|ERR: This label is only valid for persons and corporate bodies.
+degree committee member|w|http://rdaregistry.info/Elements/w/P10284|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+degree supervisor|w|http://rdaregistry.info/Elements/w/P10041|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+degree granting institution|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10006|ERR: This label is only valid for corporate bodies.
+description of|w|http://rdaregistry.info/Elements/w/P10325|http://rdaregistry.info/Elements/w/P10326|http://rdaregistry.info/Elements/w/P10327
+designer|w|http://rdaregistry.info/Elements/w/P10441|http://rdaregistry.info/Elements/w/P10535|http://rdaregistry.info/Elements/w/P10582
+director|w|http://rdaregistry.info/Elements/w/P10455|http://rdaregistry.info/Elements/w/P10549|http://rdaregistry.info/Elements/w/P10596
+director of photography|w|http://rdaregistry.info/Elements/w/P10415|http://rdaregistry.info/Elements/w/P10509|http://rdaregistry.info/Elements/w/P10556
+editorial director|w|http://rdaregistry.info/Elements/w/P10417|http://rdaregistry.info/Elements/w/P10511|http://rdaregistry.info/Elements/w/P10558
+enacting jurisdiction|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10017|ERR: This label is only valid for corporate bodies.
+film director|w|http://rdaregistry.info/Elements/w/P10418|http://rdaregistry.info/Elements/w/P10512|http://rdaregistry.info/Elements/w/P10559
+film producer|w|http://rdaregistry.info/Elements/w/P10422|http://rdaregistry.info/Elements/w/P10516|http://rdaregistry.info/Elements/w/P10563
+filmmaker|w|http://rdaregistry.info/Elements/w/P10450|http://rdaregistry.info/Elements/w/P10544|http://rdaregistry.info/Elements/w/P10591
+founder of work|w|http://rdaregistry.info/Elements/w/P10452|http://rdaregistry.info/Elements/w/P10546|http://rdaregistry.info/Elements/w/P10593
+honouree|w|http://rdaregistry.info/Elements/w/P10433|http://rdaregistry.info/Elements/w/P10527|http://rdaregistry.info/Elements/w/P10574
+hosting institution|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10007|ERR: This label is only valid for corporate bodies.
+interviewee|w|http://rdaregistry.info/Elements/w/P10447|http://rdaregistry.info/Elements/w/P10541|http://rdaregistry.info/Elements/w/P10588
+interviewer|w|http://rdaregistry.info/Elements/w/P10446|http://rdaregistry.info/Elements/w/P10540|http://rdaregistry.info/Elements/w/P10587
+inventor|w|http://rdaregistry.info/Elements/w/P10443|http://rdaregistry.info/Elements/w/P10537|http://rdaregistry.info/Elements/w/P10584
+issuing person|w|http://rdaregistry.info/Elements/w/P10456|USE: issuing body|USE: issuing family
+issuing body|w|USE: issuing person|http://rdaregistry.info/Elements/w/P10550|USE: issuing family
+issuing family|w|USE: issuing person|USE: issuing body|http://rdaregistry.info/Elements/w/P10597
+judge|w|http://rdaregistry.info/Elements/w/P10044|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+landscape architect|w|http://rdaregistry.info/Elements/w/P10425|http://rdaregistry.info/Elements/w/P10519|http://rdaregistry.info/Elements/w/P10566
+librettist|w|http://rdaregistry.info/Elements/w/P10431|http://rdaregistry.info/Elements/w/P10525|http://rdaregistry.info/Elements/w/P10572
+lyricist|w|http://rdaregistry.info/Elements/w/P10430|http://rdaregistry.info/Elements/w/P10524|http://rdaregistry.info/Elements/w/P10571
+medium|w|http://rdaregistry.info/Elements/w/P10036|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+organizer|w|http://rdaregistry.info/Elements/w/P10457|http://rdaregistry.info/Elements/w/P10551|http://rdaregistry.info/Elements/w/P10598
+photographer|w|http://rdaregistry.info/Elements/w/P10445|http://rdaregistry.info/Elements/w/P10539|http://rdaregistry.info/Elements/w/P10586
+plaintiff|w|http://rdaregistry.info/Elements/w/P10043|http://rdaregistry.info/Elements/w/P10010|ERR: This label is only valid for persons and corporate bodies.
+praeses|w|http://rdaregistry.info/Elements/w/P10045|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+producer|w|http://rdaregistry.info/Elements/w/P10454|http://rdaregistry.info/Elements/w/P10548|http://rdaregistry.info/Elements/w/P10595
+production company|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10008|This label is only valid for corporate bodies.
+programmer|w|http://rdaregistry.info/Elements/w/P10440|http://rdaregistry.info/Elements/w/P10534|http://rdaregistry.info/Elements/w/P10581
+project supervisor|w|http://rdaregistry.info/Elements/w/P10408|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+radio director|w|http://rdaregistry.info/Elements/w/P10419|http://rdaregistry.info/Elements/w/P10513|http://rdaregistry.info/Elements/w/P10560
+radio producer|w|http://rdaregistry.info/Elements/w/P10423|http://rdaregistry.info/Elements/w/P10517|http://rdaregistry.info/Elements/w/P10564
+rapporteur|w|http://rdaregistry.info/Elements/w/P10432|http://rdaregistry.info/Elements/w/P10526|http://rdaregistry.info/Elements/w/P10573
+related person|w|http://rdaregistry.info/Elements/w/P10312|USE: related body|USE: related family
+related body|w|USE: related person|http://rdaregistry.info/Elements/w/P10314|USE: related family
+related family|w|USE: related person|USE: related body|http://rdaregistry.info/Elements/w/P10313
+remix artist|w|http://rdaregistry.info/Elements/w/P10449|http://rdaregistry.info/Elements/w/P10543|http://rdaregistry.info/Elements/w/P10590
+research supervisor|w|http://rdaregistry.info/Elements/w/P10409|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+researcher|w|http://rdaregistry.info/Elements/w/P10416|http://rdaregistry.info/Elements/w/P10510|http://rdaregistry.info/Elements/w/P10557
+respondent|w|http://rdaregistry.info/Elements/w/P10001|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+screenwriter|w|http://rdaregistry.info/Elements/w/P10429|http://rdaregistry.info/Elements/w/P10523|http://rdaregistry.info/Elements/w/P10570
+sculptor|w|http://rdaregistry.info/Elements/w/P10427|http://rdaregistry.info/Elements/w/P10521|http://rdaregistry.info/Elements/w/P10568
+sponsor|w|http://rdaregistry.info/Elements/w/P10607|http://rdaregistry.info/Elements/w/P10605|http://rdaregistry.info/Elements/w/P10606
+subject|w|http://rdaregistry.info/Elements/w/P10261|http://rdaregistry.info/Elements/w/P10263|http://rdaregistry.info/Elements/w/P10262
+television director|w|http://rdaregistry.info/Elements/w/P10420|http://rdaregistry.info/Elements/w/P10514|http://rdaregistry.info/Elements/w/P10561
+television producer|w|http://rdaregistry.info/Elements/w/P10424|http://rdaregistry.info/Elements/w/P10518|http://rdaregistry.info/Elements/w/P10565
+treaty participant|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10292|ERR: This label is only valid for corporate bodies.
+abridger|e|http://rdaregistry.info/Elements/e/P20357|http://rdaregistry.info/Elements/e/P20475|http://rdaregistry.info/Elements/e/P20534
+actor|e|http://rdaregistry.info/Elements/e/P20369|http://rdaregistry.info/Elements/e/P20487|http://rdaregistry.info/Elements/e/P20546
+animator|e|http://rdaregistry.info/Elements/e/P20394|http://rdaregistry.info/Elements/e/P20512|http://rdaregistry.info/Elements/e/P20571
+arranger|e|USE: arranger of music|http://rdaregistry.info/Elements/e/P20483|USE: arranger of music
+arranger of music|e|http://rdaregistry.info/Elements/e/P20365|USE: arranger|http://rdaregistry.info/Elements/e/P20542
+art director|e|http://rdaregistry.info/Elements/e/P20350|http://rdaregistry.info/Elements/e/P20468|http://rdaregistry.info/Elements/e/P20527
+audio engineer|e|http://rdaregistry.info/Elements/e/P20348|http://rdaregistry.info/Elements/e/P20466|http://rdaregistry.info/Elements/e/P20525
+censor|e|http://rdaregistry.info/Elements/e/P20356|http://rdaregistry.info/Elements/e/P20474|http://rdaregistry.info/Elements/e/P20533
+choral conductor|e|http://rdaregistry.info/Elements/e/P20336|http://rdaregistry.info/Elements/e/P20454|http://rdaregistry.info/Elements/e/P20513
+colourist|e|http://rdaregistry.info/Elements/e/P20340|http://rdaregistry.info/Elements/e/P20458|http://rdaregistry.info/Elements/e/P20517
+commentator|e|http://rdaregistry.info/Elements/e/P20377|http://rdaregistry.info/Elements/e/P20495|http://rdaregistry.info/Elements/e/P20554
+conductor|e|http://rdaregistry.info/Elements/e/P20383|http://rdaregistry.info/Elements/e/P20501|http://rdaregistry.info/Elements/e/P20560
+contributor to amalgamation|e|http://rdaregistry.info/Elements/e/P20367|http://rdaregistry.info/Elements/e/P20485|http://rdaregistry.info/Elements/e/P20544
+contributor to performance|e|http://rdaregistry.info/Elements/e/P20366|http://rdaregistry.info/Elements/e/P20484|http://rdaregistry.info/Elements/e/P20543
+costume designer|e|http://rdaregistry.info/Elements/e/P20345|http://rdaregistry.info/Elements/e/P20463|http://rdaregistry.info/Elements/e/P20522
+court reporter|e|http://rdaregistry.info/Elements/e/P20352|http://rdaregistry.info/Elements/e/P20470|http://rdaregistry.info/Elements/e/P20529
+creator|e|http://rdaregistry.info/Elements/e/P20389|http://rdaregistry.info/Elements/e/P20507|http://rdaregistry.info/Elements/e/P20566
+dancer|e|http://rdaregistry.info/Elements/e/P20371|http://rdaregistry.info/Elements/e/P20489|http://rdaregistry.info/Elements/e/P20548
+DJ|e|http://rdaregistry.info/Elements/e/P20349|http://rdaregistry.info/Elements/e/P20467|http://rdaregistry.info/Elements/e/P20526
+draftsman|e|http://rdaregistry.info/Elements/e/P20339|http://rdaregistry.info/Elements/e/P20457|http://rdaregistry.info/Elements/e/P20516
+dubbing director|e|http://rdaregistry.info/Elements/e/P20393|http://rdaregistry.info/Elements/e/P20511|http://rdaregistry.info/Elements/e/P20570
+editor|e|http://rdaregistry.info/Elements/e/P20338|http://rdaregistry.info/Elements/e/P20456|http://rdaregistry.info/Elements/e/P20515
+editor of moving image work|e|http://rdaregistry.info/Elements/e/P20390|http://rdaregistry.info/Elements/e/P20508|http://rdaregistry.info/Elements/e/P20567
+host|e|http://rdaregistry.info/Elements/e/P20372|http://rdaregistry.info/Elements/e/P20490|http://rdaregistry.info/Elements/e/P20549
+instructor|e|http://rdaregistry.info/Elements/e/P20381|http://rdaregistry.info/Elements/e/P20499|http://rdaregistry.info/Elements/e/P20558
+instrumental conductor|e|http://rdaregistry.info/Elements/e/P20368|http://rdaregistry.info/Elements/e/P20486|http://rdaregistry.info/Elements/e/P20545
+instrumentalist|e|http://rdaregistry.info/Elements/e/P20376|http://rdaregistry.info/Elements/e/P20494|http://rdaregistry.info/Elements/e/P20553
+interviewee|e|http://rdaregistry.info/Elements/e/P20354|http://rdaregistry.info/Elements/e/P20472|http://rdaregistry.info/Elements/e/P20531
+interviewer|e|http://rdaregistry.info/Elements/e/P20337|http://rdaregistry.info/Elements/e/P20455|http://rdaregistry.info/Elements/e/P20514
+letterer|e|http://rdaregistry.info/Elements/e/P20387|http://rdaregistry.info/Elements/e/P20505|http://rdaregistry.info/Elements/e/P20564
+lighting designer|e|http://rdaregistry.info/Elements/e/P20344|http://rdaregistry.info/Elements/e/P20462|http://rdaregistry.info/Elements/e/P20521
+makeup artist|e|http://rdaregistry.info/Elements/e/P20341|http://rdaregistry.info/Elements/e/P20459|http://rdaregistry.info/Elements/e/P20518
+minute taker|e|http://rdaregistry.info/Elements/e/P20392|http://rdaregistry.info/Elements/e/P20510|http://rdaregistry.info/Elements/e/P20569
+mixing engineer|e|http://rdaregistry.info/Elements/e/P20348|http://rdaregistry.info/Elements/e/P20503|http://rdaregistry.info/Elements/e/P20385
+moderator|e|http://rdaregistry.info/Elements/e/P20373|http://rdaregistry.info/Elements/e/P20491|http://rdaregistry.info/Elements/e/P20550
+music programmer|e|http://rdaregistry.info/Elements/e/P20362|http://rdaregistry.info/Elements/e/P20480|http://rdaregistry.info/Elements/e/P20539
+musical director|e|http://rdaregistry.info/Elements/e/P20342|http://rdaregistry.info/Elements/e/P20460|http://rdaregistry.info/Elements/e/P20519
+narrator|e|http://rdaregistry.info/Elements/e/P20378|http://rdaregistry.info/Elements/e/P20496|http://rdaregistry.info/Elements/e/P20555
+onscreen participant|e|http://rdaregistry.info/Elements/e/P20363|http://rdaregistry.info/Elements/e/P20481|http://rdaregistry.info/Elements/e/P20540
+panelist|e|http://rdaregistry.info/Elements/e/P20375|http://rdaregistry.info/Elements/e/P20493|http://rdaregistry.info/Elements/e/P20552
+performer|e|http://rdaregistry.info/Elements/e/P20351|http://rdaregistry.info/Elements/e/P20469|http://rdaregistry.info/Elements/e/P20528
+presenter|e|http://rdaregistry.info/Elements/e/P20388|http://rdaregistry.info/Elements/e/P20506|http://rdaregistry.info/Elements/e/P20565
+production designer|e|http://rdaregistry.info/Elements/e/P20391|http://rdaregistry.info/Elements/e/P20509|http://rdaregistry.info/Elements/e/P20568
+puppeteer|e|http://rdaregistry.info/Elements/e/P20374|http://rdaregistry.info/Elements/e/P20492|http://rdaregistry.info/Elements/e/P20551
+recording engineer|e|http://rdaregistry.info/Elements/e/P20386|http://rdaregistry.info/Elements/e/P20504|http://rdaregistry.info/Elements/e/P20563
+recordist|e|http://rdaregistry.info/Elements/e/P20358|http://rdaregistry.info/Elements/e/P20476|http://rdaregistry.info/Elements/e/P20535
+related person|e|http://rdaregistry.info/Elements/e/P20302|USE: related body|USE: related family
+related body|e|USE: related person|http://rdaregistry.info/Elements/e/P20304|USE: related family
+related family|e|USE: related person|USE: related body|http://rdaregistry.info/Elements/e/P20303
+restorationist|e|http://rdaregistry.info/Elements/e/P20355|http://rdaregistry.info/Elements/e/P20473|http://rdaregistry.info/Elements/e/P20532
+reviser|e|http://rdaregistry.info/Elements/e/P20347|http://rdaregistry.info/Elements/e/P20465|http://rdaregistry.info/Elements/e/P20524
+singer|e|http://rdaregistry.info/Elements/e/P20382|http://rdaregistry.info/Elements/e/P20500|http://rdaregistry.info/Elements/e/P20559
+software developer|e|http://rdaregistry.info/Elements/e/P20353|http://rdaregistry.info/Elements/e/P20471|http://rdaregistry.info/Elements/e/P20530
+sound designer|e|http://rdaregistry.info/Elements/e/P20343|http://rdaregistry.info/Elements/e/P20461|http://rdaregistry.info/Elements/e/P20520
+speaker|e|http://rdaregistry.info/Elements/e/P20380|http://rdaregistry.info/Elements/e/P20498|http://rdaregistry.info/Elements/e/P20557
+special effects provider|e|http://rdaregistry.info/Elements/e/P20360|http://rdaregistry.info/Elements/e/P20478|http://rdaregistry.info/Elements/e/P20537
+stage director|e|http://rdaregistry.info/Elements/e/P20364|http://rdaregistry.info/Elements/e/P20482|http://rdaregistry.info/Elements/e/P20541
+storyteller|e|http://rdaregistry.info/Elements/e/P20379|http://rdaregistry.info/Elements/e/P20497|http://rdaregistry.info/Elements/e/P20556
+transcriber|e|http://rdaregistry.info/Elements/e/P20359|http://rdaregistry.info/Elements/e/P20477|http://rdaregistry.info/Elements/e/P20536
+translator|e|http://rdaregistry.info/Elements/e/P20346|http://rdaregistry.info/Elements/e/P20464|http://rdaregistry.info/Elements/e/P20523
+visual effects provider|e|http://rdaregistry.info/Elements/e/P20361|http://rdaregistry.info/Elements/e/P20479|http://rdaregistry.info/Elements/e/P20538
+voice actor|e|http://rdaregistry.info/Elements/e/P20384|http://rdaregistry.info/Elements/e/P20502|http://rdaregistry.info/Elements/e/P20561
+related person|m|http://rdaregistry.info/Elements/m/P30268|USE: related body|USE: related family
+related body|m|USE: related person|http://rdaregistry.info/Elements/m/P30270|USE: related family
+related family|m|USE: related person|USE: related body|http://rdaregistry.info/Elements/m/P30269
+book designer|m|http://rdaregistry.info/Elements/m/P30349|http://rdaregistry.info/Elements/m/P30407|http://rdaregistry.info/Elements/m/P30436
+braille embosser|m|http://rdaregistry.info/Elements/m/P30351|http://rdaregistry.info/Elements/m/P30409|http://rdaregistry.info/Elements/m/P30438
+broadcaster|m|http://rdaregistry.info/Elements/m/P30347|http://rdaregistry.info/Elements/m/P30405|http://rdaregistry.info/Elements/m/P30434
+caster|m|http://rdaregistry.info/Elements/m/P30353|http://rdaregistry.info/Elements/m/P30411|http://rdaregistry.info/Elements/m/P30434
+collotyper|m|http://rdaregistry.info/Elements/m/P30357|http://rdaregistry.info/Elements/m/P30415|http://rdaregistry.info/Elements/m/P30444
+contributor of cartography|m|http://rdaregistry.info/Elements/m/P30338|http://rdaregistry.info/Elements/m/P30396|http://rdaregistry.info/Elements/m/P30425
+contributor of choreography|m|http://rdaregistry.info/Elements/m/P30339|http://rdaregistry.info/Elements/m/P30397|http://rdaregistry.info/Elements/m/P30426
+contributor of computer content|m|http://rdaregistry.info/Elements/m/P30346|http://rdaregistry.info/Elements/m/P30404|http://rdaregistry.info/Elements/m/P30433
+contributor of moving image|m|http://rdaregistry.info/Elements/m/P30340|http://rdaregistry.info/Elements/m/P30398|http://rdaregistry.info/Elements/m/P30427
+contributor of music|m|http://rdaregistry.info/Elements/m/P30341|http://rdaregistry.info/Elements/m/P30399|http://rdaregistry.info/Elements/m/P30428
+contributor of object|m|http://rdaregistry.info/Elements/m/P30345|http://rdaregistry.info/Elements/m/P30403|http://rdaregistry.info/Elements/m/P30432
+contributor of speech|m|http://rdaregistry.info/Elements/m/P30342|http://rdaregistry.info/Elements/m/P30400|http://rdaregistry.info/Elements/m/P30429
+illustrator|m|http://rdaregistry.info/Elements/m/P30343|http://rdaregistry.info/Elements/m/P30401|http://rdaregistry.info/Elements/m/P30430
+photographer|m|http://rdaregistry.info/Elements/m/P30343|http://rdaregistry.info/Elements/m/P30401|http://rdaregistry.info/Elements/m/P30430
+writer of supplementary textual content|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of added text|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of preface|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of added commentary|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of introduction|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of added lyrics|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of afterword|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of postface|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+writer of foreword|m|http://rdaregistry.info/Elements/m/P30344|http://rdaregistry.info/Elements/m/P30402|http://rdaregistry.info/Elements/m/P30431
+contributor to aggregate|m|http://rdaregistry.info/Elements/m/P30336|http://rdaregistry.info/Elements/m/P30394|http://rdaregistry.info/Elements/m/P30423
+creator of manifestation|m|http://rdaregistry.info/Elements/m/P30363|http://rdaregistry.info/Elements/m/P30421|http://rdaregistry.info/Elements/m/P30450
+distributor|m|http://rdaregistry.info/Elements/m/P30359|http://rdaregistry.info/Elements/m/P30417|http://rdaregistry.info/Elements/m/P30446
+engraver|m|http://rdaregistry.info/Elements/m/P30350|http://rdaregistry.info/Elements/m/P30408|http://rdaregistry.info/Elements/m/P30437
+etcher|m|http://rdaregistry.info/Elements/m/P30356|http://rdaregistry.info/Elements/m/P30414|http://rdaregistry.info/Elements/m/P30443
+film distributor|m|http://rdaregistry.info/Elements/m/P30348|http://rdaregistry.info/Elements/m/P30406|http://rdaregistry.info/Elements/m/P30435
+lithographer|m|http://rdaregistry.info/Elements/m/P30354|http://rdaregistry.info/Elements/m/P30412|http://rdaregistry.info/Elements/m/P30441
+manufacturer|m|http://rdaregistry.info/Elements/m/P30361|http://rdaregistry.info/Elements/m/P30419|http://rdaregistry.info/Elements/m/P30448
+papermaker|m|http://rdaregistry.info/Elements/m/P30364|http://rdaregistry.info/Elements/m/P30422|http://rdaregistry.info/Elements/m/P30451
+platemaker|m|http://rdaregistry.info/Elements/m/P30355|http://rdaregistry.info/Elements/m/P30413|http://rdaregistry.info/Elements/m/P30442
+printer|m|http://rdaregistry.info/Elements/m/P30358|http://rdaregistry.info/Elements/m/P30416|http://rdaregistry.info/Elements/m/P30445
+printmaker|m|http://rdaregistry.info/Elements/m/P30352|http://rdaregistry.info/Elements/m/P30410|http://rdaregistry.info/Elements/m/P30439
+producer of unpublished manifesatation|m|http://rdaregistry.info/Elements/m/P30360|http://rdaregistry.info/Elements/m/P30418|http://rdaregistry.info/Elements/m/P30447
+publisher|m|http://rdaregistry.info/Elements/m/P30362|http://rdaregistry.info/Elements/m/P30420|http://rdaregistry.info/Elements/m/P30449
+surveyor|m|http://rdaregistry.info/Elements/m/P30337|http://rdaregistry.info/Elements/m/P30395|http://rdaregistry.info/Elements/m/P30424
+related person|i|http://rdaregistry.info/Elements/i/P40073|USE: related body|USE: related family
+related body|i|USE: related person|http://rdaregistry.info/Elements/i/P40075|USE: related family
+related family|i|USE: related person|USE: related body|http://rdaregistry.info/Elements/i/P40074
+annotator|i|http://rdaregistry.info/Elements/i/P40015|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+autographer|i|http://rdaregistry.info/Elements/i/P40016|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+binder|i|http://rdaregistry.info/Elements/i/P40098|http://rdaregistry.info/Elements/i/P40130|http://rdaregistry.info/Elements/i/P40146
+collection registrar|i|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.
+collector|i|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.|ERR: The Item-level elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currently have approved PCC labels.
+curator|i|ERR: The elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currenly have approved PCC labels.|ERR: The elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currenly have approved PCC labels.|ERR: The elements associated with this label are deprecated. See the Work elements for compiler, collector, and collection registrar, which do not currenly have approved PCC labels.
+current owner|i|http://rdaregistry.info/Elements/i/P40101|http://rdaregistry.info/Elements/i/P40133|http://rdaregistry.info/Elements/i/P40149
+custodian|i|http://rdaregistry.info/Elements/i/P40103|http://rdaregistry.info/Elements/i/P40135|http://rdaregistry.info/Elements/i/P40151
+dedicatee|i|http://rdaregistry.info/Elements/i/P40097|http://rdaregistry.info/Elements/i/P40129|http://rdaregistry.info/Elements/i/P40145
+depositor|i|http://rdaregistry.info/Elements/i/P40107|http://rdaregistry.info/Elements/i/P40139|http://rdaregistry.info/Elements/i/P40155
+donor|i|http://rdaregistry.info/Elements/i/P40108|http://rdaregistry.info/Elements/i/P40140|http://rdaregistry.info/Elements/i/P40156
+former owner|i|http://rdaregistry.info/Elements/i/P40102|http://rdaregistry.info/Elements/i/P40134|http://rdaregistry.info/Elements/i/P40150
+honouree|i|http://rdaregistry.info/Elements/i/P40110|http://rdaregistry.info/Elements/i/P40142|http://rdaregistry.info/Elements/i/P40158
+illuminator|i|http://rdaregistry.info/Elements/i/P40100|http://rdaregistry.info/Elements/i/P40132|http://rdaregistry.info/Elements/i/P40148
+inscriber|i|http://rdaregistry.info/Elements/i/P40014|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
+modifier|i|http://rdaregistry.info/Elements/i/P40112|http://rdaregistry.info/Elements/i/P40144|http://rdaregistry.info/Elements/i/P40160
+owner|i|http://rdaregistry.info/Elements/i/P40104|http://rdaregistry.info/Elements/i/P40136|http://rdaregistry.info/Elements/i/P40152
+restorationist|i|http://rdaregistry.info/Elements/i/P40111|http://rdaregistry.info/Elements/i/P40143|http://rdaregistry.info/Elements/i/P40159
+seller|i|http://rdaregistry.info/Elements/i/P40109|http://rdaregistry.info/Elements/i/P40141|http://rdaregistry.info/Elements/i/P40157
