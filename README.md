@@ -58,3 +58,8 @@ Place your cursor in a 1xx or 7xx field with at least one LC-PCC relationship la
 
 #Other Info
 
+The labels, IRIs, and their associated WEMI domains are stored in a pipe-delimited list containing, in order, the label, the WEMI domain, and the IRIs for the corresponding person, corporate body, and family relationship elements. If a particulary label/agent combination is not valid, in place of an IRI there is either a "USE:" reference, which punts the macro in the right direction, or an "ERR:" message that will be displayed to the user. The order of entries is technically arbitrary, since the macro will simply loop through the whole list until it finds a match (or runs out of things to check).
+
+The macro relies on the text file having Windows-style line breaks. Given that Connexion is a Windows-only program that's probably not a concern, but something to be aware of I guess.
+
+The spreadsheet file "relationship_mapping.xlsx" is not referenced by the macro at all, but will automatically concatenate entry strings for the text file.
