@@ -13,7 +13,7 @@ cartographer|w|http://rdaregistry.info/Elements/w/P10435|http://rdaregistry.info
 casting director|w|http://rdaregistry.info/Elements/w/P10453|http://rdaregistry.info/Elements/w/P10547|http://rdaregistry.info/Elements/w/P10594
 choreographer|w|http://rdaregistry.info/Elements/w/P10434|http://rdaregistry.info/Elements/w/P10528|http://rdaregistry.info/Elements/w/P10575
 civil defendant|w|http://rdaregistry.info/Elements/w/P10397|http://rdaregistry.info/Elements/w/P10395|ERR: This label is only valid for persons and corporate bodies.
-commissioner|w|http://rdaregistry.info/Elements/w/P10439|ERR: This label is only valid for persons and families. Use "commissioning body" for corporate bodies.|http://rdaregistry.info/Elements/w/P10580
+commissioner|w|http://rdaregistry.info/Elements/w/P10439|USE: commissioning body|http://rdaregistry.info/Elements/w/P10580
 commisioning body|w|USE: commissioner|http://rdaregistry.info/Elements/w/P10533|USE: commissioner
 compiler|w|http://rdaregistry.info/Elements/w/P10444|http://rdaregistry.info/Elements/w/P10538|http://rdaregistry.info/Elements/w/P10585
 composer|w|http://rdaregistry.info/Elements/w/P10442|http://rdaregistry.info/Elements/w/P10536|http://rdaregistry.info/Elements/w/P10583

@@ -24,16 +24,10 @@ On Error GoTo 0
    If CS Is Nothing Then
       Set CS = CreateObject("Connex.Client")
    End If
-
-'tmp$ = "stuff"
-'slct% = SelectDomain(tmp$)
-'MsgBox("You chose " & slct%)
-'Goto Done
    
    Dim DELIM As String
    Dim SF4 As String
    Dim Relationships() As String
-   Dim qt As String
    Dim nFileError As Integer
 
 'Set up variables for common strings and non-alphanumeric characters
@@ -45,7 +39,12 @@ On Error GoTo 0
    Call BuildRelationshipIndex( Relationships(), nFileError )
    If nFileError = TRUE Then Exit Sub
 
+  
+  
+ 
+   
 
+CheckSubfields:
    Dim nRow As Integer
    Dim nAllSFCount As Integer
    Dim nRelSFCount As Integer
@@ -296,7 +295,7 @@ Function FindRelationship( FieldType%, ByRef Search$, ByRef Index() As String ) 
 
    For i = LBound(Index()) To UBound(Index())
       check$ = GetField(Index(i), 1, "|")
-      domcheck$ = GetField(Index(i), 5, "/")
+      domcheck$ = GetField(Index(i), 2, "|")
 
 '#    Check if the strings match AND if they are the same length, to prevent false matches like "director" being 
 '#    found in "casting director"
