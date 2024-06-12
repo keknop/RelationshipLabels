@@ -55,7 +55,7 @@ photographer|w|http://rdaregistry.info/Elements/w/P10445|http://rdaregistry.info
 plaintiff|w|http://rdaregistry.info/Elements/w/P10043|http://rdaregistry.info/Elements/w/P10010|ERR: This label is only valid for persons and corporate bodies.
 praeses|w|http://rdaregistry.info/Elements/w/P10045|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
 producer|w|http://rdaregistry.info/Elements/w/P10454|http://rdaregistry.info/Elements/w/P10548|http://rdaregistry.info/Elements/w/P10595
-production company|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10008|This label is only valid for corporate bodies.
+production company|w|ERR: This label is only valid for corporate bodies.|http://rdaregistry.info/Elements/w/P10008|ERR: This label is only valid for corporate bodies.
 programmer|w|http://rdaregistry.info/Elements/w/P10440|http://rdaregistry.info/Elements/w/P10534|http://rdaregistry.info/Elements/w/P10581
 project supervisor|w|http://rdaregistry.info/Elements/w/P10408|ERR: This label is only valid for persons.|ERR: This label is only valid for persons.
 radio director|w|http://rdaregistry.info/Elements/w/P10419|http://rdaregistry.info/Elements/w/P10513|http://rdaregistry.info/Elements/w/P10560
