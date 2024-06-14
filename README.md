@@ -29,22 +29,26 @@ This macro is written for Connexion 3.0 or later. The macrobook itself will defi
 
 This relies on a big chonky table of IRIs manually copy/pasted into a spreadsheet from the [RDA Registry](https://rdaregistry.info). There could be mistakes! In fact, given there are 202 labels corresponding to nearly 600 relationship IRIs in the table and the filter in the registry is not always as filtery as I might wish, I would be SHOCKED if at least one of them was not pointing to the wrong thing. Click the $4 links and make sure they're correct.
 
-This is a fairly cumbersome pile of unoptimized code, written by someone who has not programmed anything in years, using an unfamiliar language that is apparently essentially "Visual Basic circa 1998, and you have to guess which modern features didn't exist yet because good luck finding any documentation on Softbridge Basic Language in 2024."  It involves a great deal of string manipulation and string comparison, which are always on the slow side of things codewise. It runs speedily on the relatively new and relatively-to-very beefy systems I have ready access to, but if you are running Connexion on a potato, I cannot guarantee it will be similarly performant.
+This is a fairly cumbersome pile of unoptimized code, written by someone who has not programmed anything in years, using an unfamiliar language that appears to be essentially "Visual Basic circa 1998, and you have to guess which VB features didn't exist yet because good luck finding any documentation on Softbridge Basic Language in 2024."  It involves a great deal of string manipulation and string comparison, which are always on the slow side of things codewise. It runs speedily on the relatively new and relatively-to-very beefy systems I have ready access to, but if you are running Connexion on a potato, I cannot guarantee it will be similarly performant.
 
 #Installation
 
+##Simple installation
+
 You will need to download both the macrobook (RelationshipLabels.mbk) and the text file that contains the IRI mappings (RelationshipTable.txt) and save them both in your Connexion macro directory. By default, for Connexion 3.0 or later, that is C:\Users\[your user name]\AppData\Roaming\OCLC\Connex\Macros. In Windows File Exporer, typing %appdata% into the address bar and hitting enter will take you directly to the AppData\Roaming folder.
 
-##If your macros are not in the default location
-If you have moved your macro directory to somewhere other than the default location (and would like to keep the the text file in the same place), you will need to edit the macro to look for the text file in the correct place.
+##Adding just one macro
 
-Tools > Macros > Manage..., then expand the RelationshipLabels category, select RelationshipLabels, and click Edit... . Search for "appdata" and locate the line:
+
+
+##If your macros are not in the default location
+If you have moved your macro directory to somewhere other than the default location (and would like to keep the the text file in the same place), you will need to edit the macro to look for the text file in the correct place. Go to *Tools > Macros > Manage...*, then expand the RelationshipLabels category, select RelationshipLabelAddIRI, and click *Edit...*. Search for "appdata" and locate the line:
 
 ```
 sFileName = Environ$("APPDATA") & "\OCLC\Connex\Macros\RelationshipTable.txt"
 ```
 
-and replace it with
+You will need to replace the part beginning with "Environ$" with the path to wherever you have relocated your macros:
 
 ```
 sFileName = "[full path to your Connexion macro directory]\RelationshipTable.txt"
@@ -58,8 +62,8 @@ Place your cursor in a 1xx or 7xx field with at least one LC-PCC relationship la
 
 #Other Info
 
-The labels, IRIs, and their associated WEMI domains are stored in a pipe-delimited list containing, in order, the label, the WEMI domain, and the IRIs for the corresponding person, corporate body, and family relationship elements. If a particulary label/agent combination is not valid, in place of an IRI there is either a "USE:" reference, which punts the macro in the right direction, or an "ERR:" message that will be displayed to the user. The order of entries is technically arbitrary, since the macro will simply loop through the whole list until it finds a match (or runs out of things to check).
+The labels, IRIs, and their associated WEMI domains are stored in a pipe-delimited list containing, in order, the label, the WEMI domain, and the IRIs for the corresponding person, corporate body, and family relationship elements. If a particular label/agent combination is not valid, in place of an IRI there is either a "USE:" reference, which punts the macro in the right direction, or an "ERR:" message that will be displayed to the user. The order of entries is technically arbitrary, since the macro will simply loop through the whole list until it finds a match (or runs out of things to check).
 
-The macro relies on the text file having Windows-style line breaks. Given that Connexion is a Windows-only program that's probably not a concern, but something to be aware of I guess.
+The macro relies on the text file having Windows-style line breaks to correctly count the number of entries. Given that Connexion is a Windows-only program that's probably not a concern, but something to be aware of I guess.
 
-The spreadsheet file "relationship_mapping.xlsx" is not referenced by the macro at all, but will automatically concatenate entry strings for the text file.
+The spreadsheet file "relationship_mapping.xlsx" is not referenced by the macro at all, but is what was used to generate the entry strings for the text file.
