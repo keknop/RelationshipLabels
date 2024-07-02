@@ -1,4 +1,4 @@
-#What Does This Button Do?
+# What Does This Button Do?
 
 This is an OCLC Connexion client macro that adds RDA relationship element IRIs to fields that contain one or more [PCC relationship labels](https://www.loc.gov/aba/rda/mgd/relationshipLabels/index.html). **Note: The LC-PCC relationship labels, like the rest of the LC-PCC Metadata Guidance for the official version of RDA, are not final and have not yet been approved for use in PCC cataloging.** Consider this a proof of concept for testing and feedback purposes.
 
@@ -21,7 +21,7 @@ Currently it only works on 1xx and 7xx name headings; title and name-title headi
 3. Do anything at all for work/expession headings (yet).
 4. Add or modify labels based on MARC relator codes (yet?).
 
-##The disclaimers
+## The disclaimers
 
 The LC-PCC relationship labels, like the rest of the LC-PCC Metadata Guidance for the official version of RDA, are not final and have not yet been approved for use in PCC cataloging. Yes, I already said that. You can of course do whatever you like in your own local system, but refrain from using them in WorldCat or other shared databases until given the all-clear.
 
@@ -31,17 +31,17 @@ This relies on a big chonky table of IRIs manually copy/pasted into a spreadshee
 
 This is a fairly cumbersome pile of unoptimized code, written by someone who has not programmed anything in years, using an unfamiliar language that appears to be essentially "Visual Basic circa 1998, and you have to guess which VB features didn't exist yet because good luck finding any documentation on Softbridge Basic Language in 2024."  It involves a great deal of string manipulation and string comparison, which are always on the slow side of things codewise. It runs speedily on the relatively new and relatively-to-very beefy systems I have ready access to, but if you are running Connexion on a potato, I cannot guarantee it will be similarly performant.
 
-#Installation
+# Installation
 
-##Simple installation
+## Simple installation
 
 You will need to download both the macrobook (RelationshipLabels.mbk) and the text file that contains the IRI mappings (RelationshipTable.txt) and save them both in your Connexion macro directory. By default, for Connexion 3.0 or later, that is C:\Users\[your user name]\AppData\Roaming\OCLC\Connex\Macros. In Windows File Exporer, typing %appdata% into the address bar and hitting enter will take you directly to the AppData\Roaming folder.
 
-##Adding just one macro
+## Adding just one macro
 
 
 
-##If your macros are not in the default location
+## If your macros are not in the default location
 If you have moved your macro directory to somewhere other than the default location (and would like to keep the the text file in the same place), you will need to edit the macro to look for the text file in the correct place. Go to *Tools > Macros > Manage...*, then expand the RelationshipLabels category, select RelationshipLabelAddIRI, and click *Edit...*. Search for "appdata" and locate the line:
 
 ```
@@ -56,11 +56,11 @@ sFileName = "[full path to your Connexion macro directory]\RelationshipTable.txt
 
 You will then need to [click the "Check" button in the macro editor toolbar](https://help.oclc.org/Metadata_Services/Connexion/Connexion_client/Connexion_client_basics/Use_macros/Use_Connexion_client_macros/10Create_Connexion_client_macros#Check_macro_syntax). If all is well, you'll see a notification that the macro compiled successfully in the message bar at the bottom of the window. Click the save button.
 
-#Use
+# Use
 
 Place your cursor in a 1xx or 7xx field with at least one LC-PCC relationship label or original RDA relationship designator and run the macro. General instructions on using macros in the Connexion client can be found [on the OCLC site](https://help.oclc.org/Metadata_Services/Connexion/Connexion_client/Connexion_client_basics/Use_macros/Use_Connexion_client_macros/20Work_with_Connexion_client_macros#Run_macros)
 
-#Other Info
+# Other Info
 
 The labels, IRIs, and their associated WEMI domains are stored in a pipe-delimited list containing, in order, the label, the WEMI domain, and the IRIs for the corresponding person, corporate body, and family relationship elements. If a particular label/agent combination is not valid, in place of an IRI there is either a "USE:" reference, which punts the macro in the right direction, or an "ERR:" message that will be displayed to the user. The order of entries is technically arbitrary, since the macro will simply loop through the whole list until it finds a match (or runs out of things to check).
 
