@@ -1,11 +1,9 @@
-'MacroName:RelationshipLabels
-'MacroDescription:Adds generic PCC relationship labels with specific RDA relationship element URIs
-
+'MacroName:GetIRIsFromPCCLabels
+'MacroDescription:Adds RDA relationship element IRIs based on LC-PCC relationship labels in the selected field.
 
 Declare Sub BuildRelationshipIndex(ByRef rels() As String, ByRef nFileError As Integer)
 Declare Function SelectDomain( Label$, Domains% ) As String
 Declare Function Count( InWhat$, Find$ ) As Integer
-Declare Function GetIRI( Search$, List() As String ) As String
 Declare Function GetTag ( FieldData$ ) As Integer
 Declare Function GetFieldType( FieldData$ ) As Integer
 Declare Function FindRelationship( FieldType%, ByRef Search$, ByRef Index() As String ) As String
@@ -30,21 +28,14 @@ On Error GoTo 0
    Dim Relationships() As String
    Dim nFileError As Integer
 
-'Set up variables for common strings and non-alphanumeric characters
+'# Set up variables for common strings and non-alphanumeric characters
    DELIM = Chr(223)           'OCLC subfield delimiter
    SF4 = " " & DELIM & "4 "   'Delimiter subfield 4, with spaces
 
 
-
    Call BuildRelationshipIndex( Relationships(), nFileError )
    If nFileError = TRUE Then Exit Sub
-
   
-  
- 
-   
-
-CheckSubfields:
    Dim nRow As Integer
    Dim nAllSFCount As Integer
    Dim nRelSFCount As Integer
@@ -73,7 +64,6 @@ CheckSubfields:
          Goto Done
       ElseIf nFieldType = 4 Then 
          sBreak = "i"
-
       ElseIf nFieldType = 2 AND nTag MOD 100 = 11 Then    
          sBreak = "j"
       Else 
@@ -97,7 +87,7 @@ CheckSubfields:
          If CS.UncontrolHeading() = TRUE Then
             'MsgBox("Debug: Heading uncontrolled.")
          Else
-            MsgBox("Heading cannot be modified while it is controlled. Tried and failed to uncontrol heading; make sure you are logged in.")
+            MsgBox("Headings cannot be modified while controlled. Failed to uncontrol heading; make sure you are logged in.")
             Goto Done
          End If
       End If
@@ -145,14 +135,8 @@ CheckSubfields:
       sFieldText = sNewFieldText & sIRIConcat
       'MsgBox("Debug: Adding IRI(s): " & sIRIConcat)
       'MsgBox("Debug: Final field value: " & sFieldText)
-      CS.SetFieldLine nRow, sFieldText
-      
+      CS.SetFieldLine nRow, sFieldText    
    End If
-
-'Edge cases: same label for multiple realtionships: creator, related person/body/family, interviewee, interviewer, restorationist, dedicatee, honouree
-
-         
-
 
 Done:
 End Sub      
@@ -191,15 +175,8 @@ Sub BuildRelationshipIndex(ByRef rels() As String, ByRef nFileError As Integer)
 
 FileError:
    nFileError = TRUE
-   MsgBox("Failed to find/open the file " & VbCrLf & Chr(13) & Chr(10) & sFileName & ". " & Chr(13) & Chr(10) & "Make sure you downloaded this file from [github address]. It should be saved in the same folder as your Connexion macro files.")
+   MsgBox("Failed to find/open the file " & VbCrLf & Chr(13) & Chr(10) & sFileName & ". " & Chr(13) & Chr(10) & "Make sure you downloaded this file from https://github.com/keknop/RelationshipLabels. It should be saved in the same folder as your Connexion macro files.")
 End Sub
-
-
-Function GetIRI( Search$, List() As String ) As String
-   
-
-
-End Function
 
 Function GetTag( FieldData$ ) As Integer
    On Error Goto TagError
@@ -517,4 +494,3 @@ Function Count(InWhat$, Find$) As Integer
   Loop
   Count = ct
 End Function
-
