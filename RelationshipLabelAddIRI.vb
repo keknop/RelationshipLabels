@@ -1,7 +1,8 @@
-'MacroName:GetIRIsFromPCCLabels
+'MacroName:RelationshipLabelAddIRI
 'MacroDescription:Adds RDA relationship element IRIs based on LC-PCC relationship labels in the selected field.
 
 Declare Sub BuildRelationshipIndex(ByRef rels() As String, ByRef nFileError As Integer)
+Declare Sub RebuildField( ByRef sFieldText As String, ByRef sBreak As String, ByRef nFieldType As Integer, ByRef sNewFieldText as String, ByRef Relationships() as String )
 Declare Function SelectDomain( Label$, Domains% ) As String
 Declare Function Count( InWhat$, Find$ ) As Integer
 Declare Function GetTag ( FieldData$ ) As Integer
@@ -24,13 +25,11 @@ On Error GoTo 0
    End If
    
    Dim DELIM As String
-   Dim SF4 As String
    Dim Relationships() As String
    Dim nFileError As Integer
 
 '# Set up variables for common strings and non-alphanumeric characters
    DELIM = Chr(223)           'OCLC subfield delimiter
-   SF4 = " " & DELIM & "4 "   'Delimiter subfield 4, with spaces
 
 
    Call BuildRelationshipIndex( Relationships(), nFileError )
@@ -43,7 +42,6 @@ On Error GoTo 0
    Dim nFieldType As Integer
    Dim nTag As Integer
    Dim sBreak As String
-   Dim sLabel As String
    Dim sIRI As String, sIRIConcat As String
    Dim bIsControlled As Integer   
   
@@ -59,16 +57,22 @@ On Error GoTo 0
 '# subfield j instead of e for agent relationships.
 
    nTag = GetTag(sFieldText)
-   nFieldType = GetFieldType(sFieldText)                    
-   If nFieldType = 0 Then 
+   nFieldType = GetFieldType(sFieldText)
+   Select Case nFieldType
+      Case 0
          Goto Done
-      ElseIf nFieldType = 4 Then 
+      Case 2
+         If nTag MOD 100 = 11 Then
+            sBreak="j"
+         Else
+            sBreak="e"
+         End If
+      Case 4
          sBreak = "i"
-      ElseIf nFieldType = 2 AND nTag MOD 100 = 11 Then    
-         sBreak = "j"
-      Else 
+      Case Else
          sBreak = "e"
-   End If
+   End Select
+
    'MsgBox("Debug: sBreak = " & sBreak)
    
 '  # Verify there are actually relationship subfields in the field, as identified by the subfield letter in sBreak.
@@ -78,7 +82,7 @@ On Error GoTo 0
 '  # and subfield from the left. Then search the list for the label and corresponding IRI based on the type of relationship.
 
    nRelSFCount = Count(sFieldText, DELIM & sBreak)
-   sLabel = "" 
+
    If nRelSFCount = 0 Then
       MsgBox("No " & DELIM & sBreak & " found in this field!")
       Goto Done
@@ -93,9 +97,25 @@ On Error GoTo 0
       End If
 
       sNewFieldText = ""
+     
+      Call RebuildField( sFieldText, sBreak, nFieldType, sNewFieldText, Relationships() )
+
+      'MsgBox("Debug: Adding IRI(s): " & sIRIConcat)
+      'MsgBox("Debug: Final field value: " & sFieldText)
+      CS.SetFieldLine nRow, sFieldText    
+   End If
+
+Done:
+End Sub  
+      
+Sub RebuildField( ByRef sFieldText As String, ByRef sBreak As String, ByRef nFieldType As Integer, ByRef sNewFieldText as String, ByRef Relationships() As String )
       sIRIConcat = ""
       sRightOfLabel = ""
+     sLabel = "" 
+     DELIM = Chr(223)           'OCLC subfield delimiter
+      SF4 = " " & DELIM & "4 "   'Delimiter subfield 4, with spaces
       nAllSFCount = Count(sFieldText, DELIM)
+
       For i = 0 to nAllSFCount
          s = GetField(sFieldText, i+1, DELIM)
          If i = 0 Then sNewFieldText = sNewFieldText & s                     'The first "field" will always be the tag up through the first delimiter, 
@@ -109,14 +129,14 @@ On Error GoTo 0
 
               'MsgBox("Debug: Result found for label " & sLabel & ": " & sIRI)
 '#             First check to see if we got an ERR: message instead of an IRI
-               If InStr(Left(sIRI$, 4), "ERR:") Then
+               If InStr(Left(sIRI, 4), "ERR:") Then
                   sIRI = Mid(sIRI, 6)
                   MsgBox("Problem with label " & sLabel & " for heading " & Chr(13) & Chr(10) & sFieldText & ":" & Chr(13) & Chr(10) & Chr(13) & Chr(10) & sIRI & " No action will be taken.")
                   sIRI = ""
            
 '#             Next check to see if the IRI is already present in the field and skip it if so
                ElseIf InStr(sFieldText, sIRI) Then
-                  'MsgBox("Debug: IRI for " & sLabel & " already present in field! Skipping.")
+                 'MsgBox("Debug: IRI for " & sLabel & " already present in field! Skipping.")
                   sIRI = ""                  
 
                Else
@@ -129,17 +149,10 @@ On Error GoTo 0
             If i > 0 Then sNewFieldText = sNewFieldText & DELIM & s              'If it's not a label field, add it as-is to the reconstructed field
          End If    
       Next i
-      
-'#    Finally, append the IRIs to the field text and replace it.
-      
-      sFieldText = sNewFieldText & sIRIConcat
-      'MsgBox("Debug: Adding IRI(s): " & sIRIConcat)
-      'MsgBox("Debug: Final field value: " & sFieldText)
-      CS.SetFieldLine nRow, sFieldText    
-   End If
 
-Done:
-End Sub      
+'#    Finally, append the IRIs to the field text and replace it.
+      sFieldText = sNewFieldText & sIRIConcat
+End Sub    
 
 Sub BuildRelationshipIndex(ByRef rels() As String, ByRef nFileError As Integer)
    Dim FSO As Object, TxtFile As Object, Data As Object
@@ -150,26 +163,25 @@ Sub BuildRelationshipIndex(ByRef rels() As String, ByRef nFileError As Integer)
    On Error Goto FileError
    Set TxtFile = FSO.GetFile(sFileName)
    Set Data = TxtFile.OpenAsTextStream(1)
-
    
-'A no-doubt horrible kludge due to the lack of a Split() function in OML. Open the whole file to count
-'the number of lines to determine array size, then close and reopen the file to go through line-by-line and
-'populate the array.
+'Dump the whole file to a string, count the number of line breaks to get the necessary array size, then feed the string into the array. GetField only takes
+'single-character delimiters, so have to test for and strip stray carriage returns. Not sure this is actually any more efficient than the previous approach, which
+'required opening the file twice, but  I'm blind guessing which file manipulation and array features are actually supported in SBL, this actually compiles, and the 
+'file size is small enough that the inefficiency is unlikely to matter.
 
-   lcount% = Count(Data.Readall, Chr(13) & Chr(10))
+   tmp$ = Data.Readall
+   'MsgBox("Debug: tmp$: " & tmp$)
+   eol$ = Chr(13) & Chr(10)
    Data.Close
    
-   ReDim rels(lcount%)
-   
-   Set Data = TxtFile.OpenAsTextStream(1)
-   Do While Not Data.AtEndOfStream
-      ln% = Data.Line - 1
-      rels(ln%) = Data.ReadLine
-   Loop
-   Data.Close
-   
-   'MsgBox("Debug: There are " & lcount% & " lines in this file.")
-   'MsgBox("Debug: The value of array index 1 is: " & rels(1))
+   ReDim rels( Count(tmp$, eol$) + 1)
+      
+   For k = 0 To UBound(rels)
+      st$ = GetField(tmp$, k+1, Chr(10) )
+      If InStr( Right(st$, 1), Chr(13) ) Then st$ = Left(st$, Len(st$) - 1)
+      rels(k) = st$
+   Next k
+   tmp$ = ""
    
    Exit Sub
 
