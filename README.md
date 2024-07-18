@@ -60,7 +60,7 @@ With your newly created macro selected, click
 
 
 ## If your macros are not in the default location
-If you have moved your macro directory to somewhere other than the default location (and would like to keep the the text file in the same place), you will need to edit the macro to look for the text file in the correct place. Go to *Tools > Macros > Manage...*, then expand the RelationshipLabels category, select RelationshipLabelAddIRI, and click *Edit...*. Search for "appdata" and locate the line:
+If you have moved your macro directory to somewhere other than the default location (and would like to keep the the text file in the same place), you will need to edit the macro to look for the text file in the correct place. Go to *Tools > Macros > Manage...*, then expand the RelationshipLabels category, select CommonFunctions, and click *Edit...*. Search for "appdata" and locate the line:
 
 ```
 sFileName = Environ$("APPDATA") & "\OCLC\Connex\Macros\RelationshipTable.txt"
